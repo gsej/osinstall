@@ -1,0 +1,13 @@
+[Unit]
+Description=PiCoolFAN4 Service supplying RPi core temperature to it
+After=mult-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pi/repos/linux-setup/raspbian/picoolfan/pcf4.py
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

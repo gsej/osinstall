@@ -1,0 +1,55 @@
+
+
+
+# https://outhereinthefield.wordpress.com/2019/05/21/enabling-hibernate-on-ubuntu-19-04-disco-dingo/
+
+get location of swap parititon
+
+grep swap /etc/fstab
+
+
+modify /etc/default/grub, 
+
+replacing 
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+
+with 
+
+94dbe54f-35b0-4cc8-ba43-668ba3fb8956 
+
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash resume=UUID=8c6616c7-1fa5-488b-90f0-66db1537dd7e"
+8c6616c7-1fa5-488b-90f0-66db1537dd7e
+
+
+# update grub
+sudo update-grub
+
+# configure initramfs
+
+sudo nano /etc/initramfs-tools/conf.d/resume
+
+update to 
+RESUME=UUID=94dbe54f-35b0-4cc8-ba43-668ba3fb8956 
+
+# reaqnble hibernate menu
+
+sudo nano /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
+
+# add this:
+
+[Re-enable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
+ResultActive=yes
+
+
+
+# configure lid switch actions
+
+

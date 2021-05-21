@@ -1,0 +1,73 @@
+
+* install git
+apt install git
+
+install chrome (download from website)
+install libappindicator3-1
+install dashlane
+ublock origin chrome
+ublock origin firefox
+add key for bitbucket
+* get ubuntu repo:
+git clone git@bitbucket.org:gsej/ubuntu-setup.git
+
+
+
+get slack from https://slack.com/intl/en-gb/downloads/linux?eu_nc=1
+login with domain londoncs.slack.com
+
+download gitgraken from https://www.gitkraken.com/download/linux-deb
+
+download rider from jetbrains.com
+expand in ~/bin/
+add link to ~/bin/jetbrains.sh
+
+download nordvpn from https://nordvpn.com/download/
+
+
+run initial.sh
+run development.sh
+run apps.sh
+run docker.sh
+run dotnetcore.sh
+run install-node.sh
+
+kubuntu configuration
+---------------------
+
+* switch to icons-only task manager
+
+* system tray icons
+right click on system tray and configure
+disable clipboard
+
+* irritating feature that zooms out when selecting an app with multiple instances is:
+Desktop Behavior | Desktop Effects | Present Windows
+
+* wallpapers
+
+* notification sounds
+Configure audio volume | Applications | Click speaker button
+
+* change login screen image
+search for Login Screen SDDM
+
+* switch to zsh:
+chsh -s $(which zsh)
+
+* install oh my zsh:
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+
+
+to find out:
+reduce time of boot loader
+
+
+
+
+manual:
+powershell core
+nordvpn
+fiddler
+
+

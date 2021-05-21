@@ -1,0 +1,5 @@
+ 
+Install tp-smapi-dkms for thinkpad to support multiple batteries (probavbly doesnt work on t460)
+
+
+acpi-call
