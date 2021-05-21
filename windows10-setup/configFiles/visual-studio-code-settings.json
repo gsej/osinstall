@@ -1,0 +1,9 @@
+{
+    "editor.formatOnSave": true,
+    "prettier.semi": true,
+    "files.autoSave": "afterDelay",
+    "prettier.tabWidth": 4,
+    "editor.detectIndentation": false,
+    "window.zoomLevel": 0,
+    "html.format.wrapLineLength": 0
+}

@@ -1,0 +1,1 @@
+open an admin command prompt and run setup.cmd

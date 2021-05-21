@@ -1,0 +1,1 @@
+add-content $profile '$env:Path += ";C:\Program Files\Notepad++"'
