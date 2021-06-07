@@ -14,8 +14,6 @@ change clipboard to ignore selection
 * notification sounds
 Configure audio volume | Applications | Click speaker button
 
-mysql:
-https://dominicm.com/install-mysql-mariadb-on-arch-linux/
 
 https://old.reddit.com/r/archlinux/comments/i3a684/setting_up_altgr_to_behave_like_alt/
 

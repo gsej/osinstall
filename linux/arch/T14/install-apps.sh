@@ -7,7 +7,7 @@ pacman -S xorg plasma plasma-desktop terminator xterm vlc okular ark dolphin ope
 
 
 systemctl enable sddm.service
-systemctl enable NetworkManager 
+systemctl enable NetworkManager zs
 
 pacman -S chromium firefox iw mlocate wireless_tools code
 
@@ -59,12 +59,6 @@ usermod -aG docker gsej
 # insync
 yay -S insync
 yay -S nordvpn-bin
-
-yay -S coursera-dl
-
-
-# virtualbox
-
 
 yay -S qview # image viewer
 

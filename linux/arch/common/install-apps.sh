@@ -88,3 +88,16 @@ yay -S bauh
 # time
 
  systemctl enable systemd-modules-load.service
+
+
+ # for dropbox
+
+ pacman -S python-gpgme
+ yay -S dropbox
+
+ 
+ 
+ # dotnet 
+ 
+ yay -S nuget
+ 
