@@ -60,7 +60,6 @@ usermod -aG docker gsej
 yay -S insync
 yay -S nordvpn-bin
 
-yay -S coursera-dl
 
 
 # virtualbox

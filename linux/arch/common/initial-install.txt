@@ -6,9 +6,10 @@ loadkeys uk
 # verify boot mode
 ls /sys/firmware/efi/efivars
 
-# on the Surface GO, this shows the directory correctly, indicating UEFI mode.
+# on the T14 / XPS13 , this shows the directory correctly, indicating UEFI mode.
 
-# using external ethernet, ping 8.8.8.8 to ensure network is running.
+# connect to wifi
+iwctl station wlan0 connect SSID 
 
 # update system clock
 timedatectl set-ntp true
@@ -19,7 +20,7 @@ cfdisk /dev/nvme0n1
 
 # partitions:
 # efi: 512Mb
-# swap: 10Gb
+# swap: 34Gb
 # /: rest
 
 mkswap /dev/nvme0n1p2
@@ -31,7 +32,7 @@ mount /dev/nvme0n1p3 /mnt
 # base system
 
 pacstrap /mnt base linux linux-firmware
-genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -U /mnt > /mnt/etc/fstab
 
 arch-chroot /mnt
 
@@ -55,12 +56,12 @@ echo "LANG=en_GB.UTF-8" > /etc/locale.conf
 echo "KEYMAP=uk" > /etc/vconsole.conf
 
 # add hostname entries:
-echo "GOarch" > /etc/hostname
+echo "t14arch" > /etc/hostname
 
 # and hosts entries:
 echo "127.0.0.1  localhost" >> /etc/hosts
 echo "::1  localhost" >> /etc/hosts
-echo "127.0.1.1  GOarch.localdomain GOarch" >> /etc/hosts
+echo "127.0.1.1  t14arch.localdomain t14arch" >> /etc/hosts
 
 # set root password
 passwd
@@ -76,14 +77,15 @@ mount /dev/nvme0n1p1 /efi
 grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 
 # microcode
-pacman -S intel-ucode
+pacman -S amd-ucode
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
 ############# reboot
-# reenable network
-dhcpcd
+# reenable wifi
 
+iwctl station wlan0 connect SSID 
+dhcpcd
 
 # create user account
 useradd -m gsej
