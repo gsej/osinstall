@@ -1,0 +1,2 @@
+#!/bin/sh
+setxkbmap -layout gb -option lv3:ralt_alt
