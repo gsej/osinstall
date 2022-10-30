@@ -98,5 +98,13 @@ yay -S bauh
  
  # dotnet 
  
- yay -S nuget
+yay -S nuget
  
+
+ # mDNS
+ 
+yay -S nss-mdns
+systemctl enable --now avahi-daemon.service
+
+# edit /etc/nsswitch.conf and change the hosts line to include this:
+# hosts: mymachines mdns_minimal [NOTFOUND=return] resolve [!UNAVAIL=return] files myhostname dns
