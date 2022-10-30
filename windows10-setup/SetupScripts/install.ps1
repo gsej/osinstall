@@ -6,8 +6,6 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 
 cinst notepadplusplus -y
 cinst firacode -y
-cinst conemu -y
-copy C:\Local\GIT\windows10setup\configFiles\conemu.xml (get-item env:appdata).value
 cinst gitextensions -y
 cinst kdiff3 -y
 cinst sysinternals -y
@@ -39,7 +37,3 @@ cinst putty -y
 cinst nmap -y
 
 Install-Module posh-docker
-
-Invoke-Expression .\add-paths.ps1
-
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
