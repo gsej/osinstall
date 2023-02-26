@@ -12,13 +12,10 @@ cinst sysinternals -y
 cinst nodejs -y
 cinst yarn -y
 cinst poshgit -y
-cinst markdownmonster -y
 cinst curl -y
-add-content $profile 'Remove-Item alias:curl'
 cinst visualstudiocode -y --params '"/NoDesktopIcon /NoContextMenuFiles /NoContextMenuFolders /NoQuicklaunchIcon"'
 
 cinst qbittorrent -y
-cinst mpc-hc -y
 cinst setpoint -y
 
 cinst sumatrapdf.install -y
@@ -32,8 +29,6 @@ cinst sdformatter -y
 cinst rufus -y
 cinst win32diskimager -y
 cinst etcher -y
-
-cinst putty -y
 cinst nmap -y
 
 Install-Module posh-docker
