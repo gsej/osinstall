@@ -1,4 +1,4 @@
-## initial install afer booting from the usb
+===nitial install afer booting from the usb
 
 # set keyboard layout
 loadkeys uk
@@ -10,6 +10,7 @@ ls /sys/firmware/efi/efivars
 
 # connect to wifi
 iwctl station wlan0 connect SSID 
+|
 
 # update system clock
 timedatectl set-ntp true

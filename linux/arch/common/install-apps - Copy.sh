@@ -5,13 +5,12 @@ makepkg -si
 
 pacman -S xorg plasma plasma-desktop terminator xterm vlc okular ark dolphin openssh kate solaar gwenview
 
-  
+
 systemctl enable sddm.service
 systemctl enable NetworkManager 
 
 pacman -S chromium firefox iw mlocate wireless_tools code
 
-''to here
 systemctl enable bluetooth
 pacman -S bluez-hid2hci pulseaudio-bluetooth # needed for headphones     
 
