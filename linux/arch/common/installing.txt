@@ -1,8 +1,5 @@
 initial install:
 
-https://medium.com/tech-notes-and-geek-stuff/install-zsh-on-arch-linux-manjaro-and-make-it-your-default-shell-b0098b756a7a
-
-
 kde configuration
 ---------------------
 
@@ -16,8 +13,3 @@ Configure audio volume | Applications | Click speaker button
 
 
 https://old.reddit.com/r/archlinux/comments/i3a684/setting_up_altgr_to_behave_like_alt/
-
-
-
-
-

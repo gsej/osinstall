@@ -11,6 +11,10 @@ systemctl enable NetworkManager
 
 pacman -S chromium firefox iw mlocate wireless_tools code
 
+# to allow firefox to use system file dialog
+pacman -S xdg-desktop-portal-kde
+
+
 systemctl enable bluetooth
 pacman -S bluez-hid2hci pulseaudio-bluetooth # needed for headphones     
 

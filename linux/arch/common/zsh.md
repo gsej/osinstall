@@ -10,3 +10,12 @@ pacman -S zsh
  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+
+
+# to allow firefox to use system file dialog, install xdg-desktop-portal-kde
+# and add:
+
+export GTK_USE_PORTAL=1
+
+to the ~/.zprofile file
