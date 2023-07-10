@@ -9,7 +9,7 @@ pacman -S xorg plasma plasma-desktop terminator xterm vlc okular ark dolphin ope
 systemctl enable sddm.service
 systemctl enable NetworkManager 
 
-pacman -S chromium firefox iw mlocate wireless_tools code
+pacman -S chromium firefox iw mlocate wireless_tools visual-studio-code-bin
 
 # to allow firefox to use system file dialog
 pacman -S xdg-desktop-portal-kde
@@ -21,8 +21,6 @@ pacman -S bluez-hid2hci pulseaudio-bluetooth # needed for headphones
 pacman -S veracrypt  packagekit-qt5
 pacman -S nodejs  npm yarn python2 gimp deluge deluge-gtk dotnet-sdk wget rsync
 pacman -S libreoffice
-
-########################################## to here. 
 
 yay -S postman
 yay -S azure-cli
@@ -65,9 +63,7 @@ yay -S insync
 yay -S nordvpn-bin
 
 
-
 # virtualbox
-
 
 yay -S qview # image viewer
 
@@ -75,7 +71,6 @@ yay -S qview # image viewer
 # languages
 
 yay -S anaconda
-
 yay -S ghc # Haskell
 
 
@@ -83,22 +78,18 @@ yay -S ghc # Haskell
 
 pacman -S strace
 pacman -S ltrace
-
 pacman -S inetutils
-
 yay -S bauh
 
 # time
 
- systemctl enable systemd-modules-load.service
+systemctl enable systemd-modules-load.service
 
 
- # for dropbox
+# for dropbox
 
  pacman -S python-gpgme
  yay -S dropbox
-
- 
  
  # dotnet 
  
@@ -112,3 +103,7 @@ systemctl enable --now avahi-daemon.service
 
 # edit /etc/nsswitch.conf and change the hosts line to include this:
 # hosts: mymachines mdns_minimal [NOTFOUND=return] resolve [!UNAVAIL=return] files myhostname dns
+#
+
+yay -S mr
+yay -S neofetch
