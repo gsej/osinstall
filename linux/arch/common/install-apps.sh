@@ -111,3 +111,8 @@ yay -S neofetch
 yay -S dupeguru
 yay -S fdupes
 yay -S at
+
+yay -S ifplugd
+
+systemctl enable --now ifplugd@eth0.service
+
