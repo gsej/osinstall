@@ -107,3 +107,7 @@ systemctl enable --now avahi-daemon.service
 
 yay -S mr
 yay -S neofetch
+
+yay -S dupeguru
+yay -S fdupes
+yay -S at
