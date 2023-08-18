@@ -116,3 +116,6 @@ yay -S ifplugd
 
 systemctl enable --now ifplugd@eth0.service
 
+yay -S udisks2
+
+yay -S kmonad
