@@ -127,3 +127,6 @@ yay -S tlp
 yay -S racket
 
 # then install sicp package in racket
+
+
+yay -S glow # display markdown in console
