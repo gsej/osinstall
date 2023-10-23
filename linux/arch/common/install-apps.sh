@@ -62,27 +62,21 @@ usermod -aG docker gsej
 yay -S insync
 yay -S nordvpn-bin
 
-
-# virtualbox
-
 yay -S qview # image viewer
 
 
 # languages
-
 yay -S anaconda
 yay -S ghc # Haskell
 
 
 # other
-
 pacman -S strace
 pacman -S ltrace
 pacman -S inetutils
 yay -S bauh
 
 # time
-
 systemctl enable systemd-modules-load.service
 
 
@@ -97,7 +91,6 @@ yay -S nuget
  
 
  # mDNS
- 
 yay -S nss-mdns
 systemctl enable --now avahi-daemon.service
 
@@ -130,3 +123,8 @@ yay -S racket
 
 
 yay -S glow # display markdown in console
+
+
+
+# virtual box
+yay -S virtualbox virtualbox-host-modules-arch virtualbox-guest-iso
