@@ -32,6 +32,7 @@ mount /dev/nvme0n1p3 /mnt
 
 # base system
 
+
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt > /mnt/etc/fstab
 

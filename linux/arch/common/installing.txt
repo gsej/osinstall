@@ -13,3 +13,7 @@ Configure audio volume | Applications | Click speaker button
 
 
 https://old.reddit.com/r/archlinux/comments/i3a684/setting_up_altgr_to_behave_like_alt/
+
+
+change this setting to false to turn off beeping on search error:
+accessibility.typeaheadfind.enablesound
