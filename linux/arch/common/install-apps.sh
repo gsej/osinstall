@@ -132,5 +132,11 @@ yay -S virtualbox virtualbox-host-modules-arch virtualbox-guest-iso
 
 yay -S storageexplorer
 
+
+# pacman stuff
 yay -S informant # prevents upgrade unless archnews has been read
 yay -S rebuild-detector
+
+
+
+yay -S btop
