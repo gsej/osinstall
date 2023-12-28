@@ -1,0 +1,47 @@
+yay -S waybar swaybg
+
+yay -S otf-font-awesome
+
+yay -S blueberry-wayland
+
+yay -S thunar alacritty
+
+
+
+
+ # to make firefox use userChrome.css:
+ 
+ #
+ #
+ # 
+# If the toolkit.legacyUserProfileCustomizations.stylesheets preference is not already set to true, double-click it to switch the value from false to true.
+ #
+ #
+ #
+
+
+// set font in .do
+
+yay -S network-manager-applet
+sudo systemctl enable NetworkManager.service
+
+// remove psk-flags line in /etc/NetworkManager/systemconnections/goodmonson 
+and add password as psk=password
+
+yay -S blueberry
+
+for screen brightness:
+
+ # replace with backlight something or othre
+yay -S light
+sudo chmod u+s /usr/bin/light
+
+
+yay -S materia-gtk-theme papirus-icon-theme lxappearance
+
+# file managr
+yay -S thunar 
+
+yay -S ttf-ubuntu-font-family
+yay -S ttf-font-awesome
+
