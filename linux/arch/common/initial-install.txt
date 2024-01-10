@@ -117,3 +117,4 @@ mkinitcpio -p linux.
 # restart before hibernate starts working
 # test with
 systemctl hibernate
+

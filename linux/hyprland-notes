@@ -1,0 +1,31 @@
+
+
+
+yay -S xd-desktop-portal-hyprland
+
+# notifications
+yay -S mako
+
+
+yay -S swaylock swayidle
+
+# wallpapers
+yay -S wbg
+
+# power control
+yay -S nwg-bar
+
+# sound
+yay -S  pipewire wireplumber
+yay -S pamixer
+
+# authentication
+yay -S polkit-kde-agent
+
+
+# qt wayland support
+yay -S qt5-wayland qt6-wayland
+
+
+# in chrome:
+# navigate to chrome://flags and search for ozone. Set value to auto so it uses wayland

@@ -4,9 +4,7 @@ yay -S otf-font-awesome
 
 yay -S blueberry-wayland
 
-yay -S thunar alacritty
-
-
+yay -S thunar gvfs tumbler alacritty
 
 
  # to make firefox use userChrome.css:
@@ -33,8 +31,7 @@ yay -S blueberry
 for screen brightness:
 
  # replace with backlight something or othre
-yay -S light
-sudo chmod u+s /usr/bin/light
+yay -S brightnessctl
 
 
 yay -S materia-gtk-theme papirus-icon-theme lxappearance
@@ -45,3 +42,9 @@ yay -S thunar
 yay -S ttf-ubuntu-font-family
 yay -S ttf-font-awesome
 
+
+# keyring
+
+yay -S gnome-keyring seahorse libsecret
+
+yay -S rofi-lbonn-wayland

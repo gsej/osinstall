@@ -1,7 +1,12 @@
+
+
 pacman -S go
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
+
+yay -S pipewire pipewire-docs wireplumber pipewire-audio pipewire-pulse pavucontrol helvum
+
 
 pacman -S xorg plasma plasma-desktop terminator xterm vlc okular ark dolphin openssh kate solaar gwenview
 
@@ -12,14 +17,14 @@ systemctl enable NetworkManager
 pacman -S chromium firefox iw mlocate wireless_tools visual-studio-code-bin
 
 # to allow firefox to use system file dialog
-pacman -S xdg-desktop-portal-kde
+#pacman -S xdg-desktop-portal-kde
 
 
 systemctl enable bluetooth
 pacman -S bluez-hid2hci pulseaudio-bluetooth # needed for headphones     
 
 pacman -S veracrypt  packagekit-qt5
-pacman -S nodejs  npm yarn python2 gimp deluge deluge-gtk dotnet-sdk wget rsync
+pacman -S nodejs  npm yarn python gimp deluge deluge-gtk dotnet-sdk wget rsync
 pacman -S libreoffice
 
 yay -S postman
@@ -36,7 +41,10 @@ sudo snap install slack --classic
 
 
 # for chromecast from vlc
-pacman -S libmicrodns protobuf pavucontrol
+pacman -S libmicrodns protobuf #pavucontrol
+#
+# install gvim over vim because it includes vim with clipboard support
+yay -S gvim
 
 # for fat filesystems:
 pacman -S dosfstools exfat-utils
@@ -140,3 +148,7 @@ yay -S rebuild-detector
 
 
 yay -S btop
+
+# https://jpospisil.com/2023/12/19/the-hidden-gems-of-moreutils
+# https://github.com/iovisor/bcc/blob/master/INSTALL.md#arch---binary
+yay -S bcc bcc-tools python-bcc
