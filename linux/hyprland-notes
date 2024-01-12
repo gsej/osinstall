@@ -1,12 +1,15 @@
 
-
-
+yay -S hyprland
 yay -S xd-desktop-portal-hyprland
+
+yay -S waybar
+
+yay -S alacritty wofi
+
+yay -S lxappearance
 
 # notifications
 yay -S mako
-
-
 yay -S swaylock swayidle
 
 # wallpapers
@@ -22,10 +25,50 @@ yay -S pamixer
 # authentication
 yay -S polkit-kde-agent
 
-
 # qt wayland support
 yay -S qt5-wayland qt6-wayland
 
 
 # in chrome:
 # navigate to chrome://flags and search for ozone. Set value to auto so it uses wayland
+
+
+##########################
+
+
+# from sway notes
+
+yay -S otf-font-awesome
+
+yay -S blueberry-wayland
+
+ # to make firefox use userChrome.css:
+ 
+ # 
+# If the toolkit.legacyUserProfileCustomizations.stylesheets preference is not already set to true, double-click it to switch the value from false to true.
+
+
+// set font in .do
+
+yay -S network-manager-applet
+sudo systemctl enable NetworkManager.service
+
+// remove psk-flags line in /etc/NetworkManager/systemconnections/goodmonson 
+and add password as psk=password
+
+yay -S blueberry
+
+for screen brightness:
+
+ # replace with backlight something or othre
+yay -S brightnessctl
+
+yay -S materia-gtk-theme papirus-icon-theme lxappearance
+
+yay -S ttf-ubuntu-font-family
+yay -S ttf-font-awesome
+
+# keyring
+
+yay -S gnome-keyring seahorse libsecret
+
