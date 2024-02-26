@@ -33,6 +33,9 @@ pacman -S vlc libmicrodns protobuf #pavucontrol
 
 # dev tools
 yay -S visual-studio-code-bin
+yay -S azuredatastudio-bin
+yay -S rider
+yay -S gita
 
 # for fat filesystems:
 pacman -S dosfstools exfat-utils
@@ -83,10 +86,6 @@ systemctl enable --now ifplugd@eth0.service
 
 yay -S udisks2
 yay -S kmonad
-
-
-
-
  
 yay -S nuget
 yay -S mr
@@ -117,16 +116,15 @@ yay -S bcc bcc-tools python-bcc
 
 yay -S xd-desktop-portal-hyprland
 
-
-yay -S lxappearance
+yay -S nwg-look
 
 # notifications
 yay -S mako
 yay -S swaylock swayidle
 
 # wallpapers
-yay -S wbg
-yay -S arch-wallpaper
+yay -S swaybg
+yay -S archlinux-wallpaper
 
 # power control
 yay -S nwg-bar
@@ -140,6 +138,10 @@ yay -S polkit-kde-agent
 
 # qt wayland support
 yay -S qt5-wayland qt6-wayland
+yay -S qt5ct
+yay -S oxygen oxygen-icons
+
+# after installing run qt5ct to select icons etc.
 
 yay -S otf-font-awesome
 
@@ -150,15 +152,9 @@ yay -S ttf-font-awesome
 yay -S gnome-keyring seahorse libsecret
 
 pacman -S okular ark openssh kate solaar gwenview
-#
+
 # in chrome:
 # navigate to chrome://flags and search for ozone. Set value to auto so it uses wayland
-
-
-##########################
-
-
-# from sway notes
 
 
 yay -S blueberry-wayland
