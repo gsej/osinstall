@@ -152,3 +152,6 @@ yay -S btop
 # https://jpospisil.com/2023/12/19/the-hidden-gems-of-moreutils
 # https://github.com/iovisor/bcc/blob/master/INSTALL.md#arch---binary
 yay -S bcc bcc-tools python-bcc
+
+
+yay -S fzf
