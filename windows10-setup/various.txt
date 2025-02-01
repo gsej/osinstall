@@ -1,2 +1,6 @@
 dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org
 
+
+powerplan switcher from windows store - to allow system tray switching of
+power plans
+

@@ -1,4 +1,4 @@
-===nitial install afer booting from the usb
+===Initial install afer booting from the usb
 
 # set keyboard layout
 loadkeys uk

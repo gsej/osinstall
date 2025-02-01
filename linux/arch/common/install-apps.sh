@@ -90,8 +90,8 @@ systemctl enable systemd-modules-load.service
 
 # for dropbox
 
- pacman -S python-gpgme
- yay -S dropbox
+pacman -S python-gpgme
+yay -S dropbox
  
  # dotnet 
  
@@ -132,8 +132,6 @@ yay -S racket
 
 yay -S glow # display markdown in console
 
-
-
 # virtual box
 yay -S virtualbox virtualbox-host-modules-arch virtualbox-guest-iso
 
@@ -145,13 +143,9 @@ yay -S storageexplorer
 yay -S informant # prevents upgrade unless archnews has been read
 yay -S rebuild-detector
 
-
-
 yay -S btop
 
 # https://jpospisil.com/2023/12/19/the-hidden-gems-of-moreutils
 # https://github.com/iovisor/bcc/blob/master/INSTALL.md#arch---binary
 yay -S bcc bcc-tools python-bcc
-
-
 yay -S fzf
