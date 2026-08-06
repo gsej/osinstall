@@ -14,7 +14,10 @@ pacman -S xorg plasma plasma-desktop terminator xterm vlc okular ark dolphin ope
 systemctl enable sddm.service
 systemctl enable NetworkManager 
 
-pacman -S chromium firefox iw mlocate wireless_tools visual-studio-code-bin
+pacman -S chromium firefox iw mlocate wireless_tools
+
+# not found:
+#visual-studio-code-bin
 
 # to allow firefox to use system file dialog
 #pacman -S xdg-desktop-portal-kde
@@ -23,7 +26,10 @@ pacman -S chromium firefox iw mlocate wireless_tools visual-studio-code-bin
 systemctl enable bluetooth
 pacman -S bluez-hid2hci pulseaudio-bluetooth # needed for headphones     
 
-pacman -S veracrypt  packagekit-qt5
+pacman -S veracrypt
+
+# not found:
+#packagekit-qt5
 pacman -S nodejs  npm yarn python gimp deluge deluge-gtk dotnet-sdk wget rsync
 pacman -S libreoffice
 
