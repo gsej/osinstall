@@ -10,6 +10,7 @@ yay -S pipewire pipewire-docs wireplumber pipewire-audio pipewire-pulse pavucont
 
 pacman -S xorg plasma plasma-desktop terminator xterm vlc okular ark dolphin openssh kate solaar gwenview
 
+pacman -S vlc-plugins-all
   
 systemctl enable sddm.service
 systemctl enable NetworkManager 
@@ -155,3 +156,24 @@ yay -S btop
 # https://github.com/iovisor/bcc/blob/master/INSTALL.md#arch---binary
 yay -S bcc bcc-tools python-bcc
 yay -S fzf
+
+yay -S smartmontools gsmartcontrol
+
+# for protonvpn
+
+yay -S proton-vpn-gtk-app
+
+# fonts
+yay -S ttf-iosevka
+yay -S ttf-adobe-source-code-pro-fonts
+
+
+# calibre
+# install calibre, and the latest pre-release DeDrm version, and KFX Input plugins
+#
+
+pacman -S stow
+
+# For kvm
+sudo pacman -S virt-manager qemu-full vde2 ebtables dnsmasqZ openbsd-netcat
+yay -S edk2-shell
